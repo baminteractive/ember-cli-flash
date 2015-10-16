@@ -82,7 +82,8 @@ export default Component.extend({
   }),
 
   click() {
-    this.sendAction('clickAction');
+    let flash = get(this, 'flash');
+    this.sendAction('clickAction', flash);
   },
 
   willDestroy() {
