@@ -82,7 +82,7 @@ export default Component.extend({
   }),
 
   click() {
-    this._destroyFlashMessage();
+    this.sendAction('clickAction');
   },
 
   willDestroy() {
